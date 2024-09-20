@@ -33,5 +33,5 @@ function loadPage(page) {
     });
 }
 window.onload = function() {
-    loadPage('site-aaps/links/homepage.html');
+    loadPage('../links/homepage.html');
 };
