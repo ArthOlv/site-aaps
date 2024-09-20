@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono";
+    font-style: normal;
+}
+body{
+    background-color: #212529;
+    height: 100vh;
+}
+#nav-bar{
+    box-shadow: 0px 3px 10px #471ca2;
+    align-items: center;
+    top: 0;
+    background-color:rgb(111, 45, 243);
+    width: 100%;
+    display: inline-flex;
+    justify-content:space-between;
+}
+#list-icon{
+    margin-left: 15px;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    cursor: pointer;
+}
+#logo img{
+    width: 150px;
+    height: 85px;
+    display: flex;
+}
+#home-icon{
+    margin-right: 15px;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    cursor: pointer;
+    background:transparent;
+    border: 0;
+}
+#home-icon > a{
+    margin-right: 15px;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    cursor: pointer;
+}
+#drawer{
+    top: 85px;
+    position: absolute;
+    background-color: rgb(111, 45, 243);
+    width: 47px;
+    height: 100vh;
+    padding: 40px 0 40px 0;
+    overflow: hidden;
+    transition: .3s;
+}
+#drawer:hover{
+    width: 220px;
+}
+#drawer.expandir{
+    width: 220px;
+}
+#drawer ul{
+    height: 100%;
+    list-style-type: none;
+}
+#drawer ul li.item-drawer{
+    max-height: 70px;
+    transition: .3s;
+}
+#drawer ul li.ativo{
+    background-color: #212529;
+}
+#drawer ul li.item-drawer:hover{
+    background-color: #212529;
+    transition: .4s;
+}
+#drawer ul li.item-drawer a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+}
+#drawer ul li.item-drawer a #txt-link{
+    margin-left: 15px;
+}
+#drawer ul li.item-drawer #icon{
+    margin-left: 10px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
