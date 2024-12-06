@@ -1,6 +1,6 @@
 <body>
     <div id="content" class="content">
-        <div id="foto"></div>
+        <div id="foto"> <img src="/links/AAP7/assets/img/minhafoto.png" alt=""></div>
         <h1>Arthur de Oliveira</h1>
             
         <div id="objetivo">
@@ -67,7 +67,16 @@
         margin-left: auto; margin-right: auto;
         width: 300px;
         height: 300px;
+    
         border-radius: 50%;
+        overflow: hidden;
+        background-color: pink;
+    }
+    #content > #foto > img{
+        display: flex;
+        max-width: 135%;
+        max-height: 135%;
+        margin: 0 auto;
     }
     #content > h1{
         text-align: center;
